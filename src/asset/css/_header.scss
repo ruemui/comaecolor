@@ -69,6 +69,11 @@
 .custom-brand {
 	padding: 1.2em 1em;
 }
+@include mq-sm {
+	.custom-brand img {
+		width: 50%;
+	}
+}
 
 .custom-menu-3 {
 	padding: .9em 1em;

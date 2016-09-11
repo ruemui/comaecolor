@@ -142,7 +142,10 @@ section {
 }
 @include mq-sm {
 	.vision {
-		text-align: left;
+		font-size: 1rem;
+		&:first-of-type {
+			margin-top: 2em;
+		}
 	}
 }
 
