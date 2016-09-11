@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*
+# 主要 CSS
+
+- `_variables.scss` … 変数を定義
+- `_mixins.scss` … 関数を定義
+- `_base.scss` … 要素セレクターを中心に、フォントや行間など全体で共通するスタイルを定義
+*/
+
+@import "_font-awesome.min.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@import "_layout.scss";
+@import "_header.scss";
+@import "_hero.scss";
+@import "_banner.scss";
+@import "_section.scss";
+@import "_footer.scss";

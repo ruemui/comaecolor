@@ -1,0 +1,89 @@
+.hero {
+	margin-top: -4.5em;
+	width: 100%;
+	@include background($image: url('../image/hero-pic-cut.png'), $v: top, $h: right);
+	background-size: contain;
+	padding: 20% 0;
+	/* margin-bottom: 4em; */
+	margin-bottom: 14em; // バナーがあるとき
+	animation-name: fadeInUp;
+	animation-duration: .5s;
+	animation-fill-mode: both;
+}
+@include mq-md {
+	.hero {
+		margin-bottom: 35%;// バナーがあるとき
+	}
+}
+@include mq-sm {
+	.hero {
+		margin-bottom: 40%;// バナーがあるとき
+	}
+}
+
+
+.hero .pure-g {
+	@include site-width;
+}
+
+.hero__title {
+	margin-left: -.5em;
+	// animation
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: .2s;
+}
+
+@include mq-sm {
+	.hero__title {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+.hero__lede {
+	margin-top: 4em;
+	font-size: 1.125rem;
+	line-height: 2.5;
+	letter-spacing: .1em;
+	// animation
+	animation-name: fadeInUp;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-delay: .4s;
+}
+@include mq-sm {
+	.hero__lede {
+		font-size: .95em;
+		text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	}
+}
+
+.hero__banner {
+	position: absolute;
+	margin-top: 6em;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@include mq-md {
+	.hero__banner {
+		width: 87.5%;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

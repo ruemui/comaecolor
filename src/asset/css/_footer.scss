@@ -1,0 +1,13 @@
+.footer {
+	padding: 1em 0;
+	background-color: $KEYCOLOR;
+}
+
+.footer-container {
+	@include site-width;
+}
+
+.copy {
+	color: #fff;
+	font-size: .75rem;
+}

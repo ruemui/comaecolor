@@ -1,0 +1,10 @@
+.l-box {
+	padding: 1.5em;
+}
+
+@include mq-md {
+	.l-box {padding: 1em;}
+}
+@include mq-sm {
+	.l-box {padding: .5em;}
+}

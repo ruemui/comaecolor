@@ -1,0 +1,99 @@
+/*
+# ルートフォントサイズを定義
+
+ */
+
+:root {
+	font-size: ($LARGEFONTSIZE / 16px) * 1rem;
+}
+
+@include mq-md {
+	:root {
+		font-size: ($MEDIUMFONTSIZE / 16px) * 1rem;
+	}
+}
+@include mq-sm {
+	:root {
+		font-size: ($SMALLFONTSIZE / 16px) * 1rem;
+	}
+}
+body {
+	font-family:  "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 2;
+	letter-spacing: .09em;
+	color: $FONTCOLOR;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family:  "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/*
+ # リンク定義
+```
+<a href="#">NEWS</a>
+```
+ */
+
+a {
+	color: $FONTCOLOR;
+	text-decoration: underline;
+	transition: all .4s ease;
+}
+
+.no-touch a:hover {
+	opacity: .6;
+}
+
+/*
+
+# 画像
+
+画像はスモールウィンドウではcontainer内で100%で表示
+
+```
+<img src="http://placehold.it/1050x150">
+```
+ */
+
+img {
+}
+@include mq-sm {
+	img {
+		max-width: 100%;
+	}
+}
+
+/*
+# 改行
+
+ */
+
+@include mq-xl {
+	br.sm-break {display: none;}
+	br.md-break {display: block;}
+	br.lg-break {display: block;}
+	br.xl-break {display: block;}
+}
+@include mq-lg {
+	br.sm-break {display: none;}
+	br.md-break {display: block;}
+	br.lg-break {display: block;}
+	br.xl-break {display: none;}
+}
+@include mq-md {
+	br.sm-break {display: none;}
+	br.md-break {display: block;}
+	br.lg-break {display: none;}
+	br.xl-break {display: none;}
+}
+@include mq-sm {
+	br.sm-break {display: block;}
+	br.md-break {display: none;}
+	br.lg-break {display: none;}
+	br.xl-break {display: none;}
+}
+
+.l-box {
+	padding: 1.5em;
+}

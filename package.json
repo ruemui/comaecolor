@@ -1,0 +1,26 @@
+{
+  "name": "taskrunner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yusuke Murakami",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-replace": "^0.5.3",
+    "gulp-sass": "^2.0.3",
+    "gulp-styledocco": "0.0.3",
+    "gulp.spritesmith": "^3.8.2",
+    "run-sequence": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,54 @@
+/* clearfix */
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+	clear: both;
+	}
+}
+
+/* background */
+@mixin background($color:transparent, $image:none, $v:center, $h:center) {
+	background: $color $image scroll no-repeat $v $h;
+}
+
+/* font size */
+@mixin font-size($size: 16px) {
+	font-size: $size / $BASEFONTSIZE * 1rem;
+}
+
+@mixin mq-sm {
+	@media screen and (max-width: $SMALL_BREAKPOINT) {
+		@content;
+	}
+}
+
+@mixin mq-md {
+	@media screen and (max-width: $MEDIUM_BREAKPOINT) {
+		@content;
+	}
+}
+@mixin mq-lg {
+	@media screen and (max-width: $LARGE_BREAKPOINT) {
+		@content;
+	}
+}
+@mixin mq-xl {
+	@media screen and (max-width: $XLARGE_BREAKPOINT) {
+		@content;
+	}
+}
+
+@mixin site-width {
+	max-width: 1140px;
+	width: 87.5%;
+	margin: 0 auto;
+}
+
+@mixin sm-site-width {
+	width: 90%;
+	margin: 0 auto;
+}
