@@ -98,7 +98,7 @@ function setHeader($) {
 	    );
 	};
 
-	function toggleMenu() {
+function toggleMenu() {
 	    // set timeout so that the panel has a chance to roll up
 	    // before the menu switches states
 	    if (menu.classList.contains('open')) {
@@ -125,6 +125,26 @@ function setHeader($) {
 	})(this, this.document);
 }
 
+function setRewind($) {
+	var $window = $(window);
+	var $btn = $('.rewind');
+	var data = this.data;
+	$btn.css('opacity', '0');
+	$window.on('scroll', function(e) {
+		var scrollTop = $window.scrollTop();
+		if (scrollTop > 600) {
+			$btn.css('opacity', '1');
+		} else {
+			$btn.css('opacity', '0');
+		}
+	});
+
+	$btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').stop(true).animate({ scrollTop: 0 },600);
+	});
+}
+
 /**
  * 読み込み完了時の処理
  *
@@ -134,4 +154,5 @@ jQuery(function($) {
 	setSmoothScroll($);
 	setLinkNewWindow($);
 	setHeader($);
+	setRewind($);
 });
