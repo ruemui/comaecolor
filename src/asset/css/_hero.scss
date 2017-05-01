@@ -5,19 +5,29 @@
 	background-size: contain;
 	padding: 20% 0;
 	/* margin-bottom: 4em; */
-	margin-bottom: 14em; // バナーがあるとき
+	margin-bottom: 28em; // バナーがあるとき
 	animation-name: fadeInUp;
 	animation-duration: .5s;
 	animation-fill-mode: both;
 }
-@include mq-md {
-	.hero {
-		margin-bottom: 35%;// バナーがあるとき
-	}
-}
 @include mq-sm {
 	.hero {
-		margin-bottom: 40%;// バナーがあるとき
+		margin-bottom: 80%;// バナーがあるとき
+	}
+}
+@include mq-md {
+	.hero {
+		margin-bottom: 70%;// バナーがあるとき
+	}
+}
+@include mq-lg {
+	.hero {
+		margin-bottom: 60%;// バナーがあるとき
+	}
+}
+@include mq-xl {
+	.hero {
+		margin-bottom: 50%;// バナーがあるとき
 	}
 }
 
@@ -69,11 +79,23 @@
 		max-width: 100%;
 		height: auto;
 	}
+	.hero__banner__item:nth-of-type(1) {
+		margin-top: 0;
+	}
+}
+
+.hero__banner__item {
+	margin-top: 2em;
 }
 
 @include mq-md {
 	.hero__banner {
 		width: 87.5%;
+	}
+}
+@include mq-lg {
+	.hero__banner {
+		width: (8/12) * 100%;
 	}
 }
 

@@ -87,7 +87,10 @@
 			<div class="pure-u-1">
 				<h1 class="hero__title"><img class="pure-img" src="asset/image/hero-title.png" alt="コマエDIY計画、はじめます。" width="783"></h1>
 				<p class="hero__lede">都心から程近く、<br class="sm-break">多摩川や野川の豊かな自然があり、<br>小さくまとまった狛江の強みを活かして、<br>comaecolor(コマエカラー)の活動を<br>東京のはしっこ、<br class="sm-break">『コマエから』はじめます。</p>
-				<p class="hero__banner"><a href="https://tamariba.amebaownd.com/" target="_blank"><img src="asset/image/banner-tamariba.png" alt="タマリバ開催決定! 詳細はこちら" width="750"></a></p>
+				<ul class="hero__banner">
+					<li class="hero__banner__item"><a href="https://info798748.wixsite.com/sotokawada/"><img src="asset/image/banner-soto.jpg" alt="SOTO KAWADA 多摩川ほとりの週末カフェ" width="750"></a></li>
+					<li class="hero__banner__item"><a href="https://tamariba.amebaownd.com/"><img src="asset/image/banner-tamariba-report-2016.jpg" alt="TAMARIBA 2016 イベントレポート" width="750"></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -213,5 +216,18 @@
 	<!-- scripts -->
 	<script src="asset/js/vendor.js"></script>
 	<script src="asset/js/main.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyChFKCj_A5r2wIuBhMOe9tBz1UStiovmtY",
+	    authDomain: "comae-color.firebaseapp.com",
+	    databaseURL: "https://comae-color.firebaseio.com",
+	    projectId: "comae-color",
+	    storageBucket: "comae-color.appspot.com",
+	    messagingSenderId: "1041395984470"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 	</body>
 </html>

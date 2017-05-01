@@ -28,7 +28,9 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	font-family:  "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
 }
-
+li {
+	list-style: none;
+}
 /*
  # リンク定義
 ```
